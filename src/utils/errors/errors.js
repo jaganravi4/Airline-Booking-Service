@@ -7,7 +7,7 @@ class AppError extends Error {
     }
 }
 
-class clientError extends AppError {
+class ClientError extends AppError {
     constructor(message = "Bad Request") {
         super(message, StatusCodes.BAD_REQUEST);
     }
@@ -27,7 +27,7 @@ class ServerError extends AppError {
 
 module.exports = {
     AppError,
-    clientError,
+    ClientError,
     ValidationError,
     ServerError,
 };
