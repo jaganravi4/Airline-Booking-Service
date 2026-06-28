@@ -14,7 +14,7 @@ class ClientError extends AppError {
 }
 
 class ValidationError extends AppError {
-    constructor(message = "Validation Failed") {
+    constructor(name = "ValidationError", message = "Validation Failed") {
         super(message, StatusCodes.BAD_REQUEST);
     }
 }
